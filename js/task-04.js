@@ -9,14 +9,10 @@ incrementBtn.addEventListener("click", increment);
 
 function decrement() {
   counterValue -= 1;
-  updateValue();
+  valueEl.textContent = counterValue;
 }
 
 function increment() {
   counterValue += 1;
-  updateValue();
-}
-
-function updateValue() {
   valueEl.textContent = counterValue;
 }
